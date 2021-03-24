@@ -24,6 +24,10 @@
 
 8. **Walked an extra mile by adding some CSS hover animations**
 
+### View Github repo:
+
+https://github.com/triatetarta/technical_assessment_html_sass
+
 ### For React Version please visit:
 
 ### View Project:
