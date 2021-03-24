@@ -1,0 +1,230 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $bodyBg;
+
+  a {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+
+@import './variables';
+
+.card {
+  position: relative;
+  height: 720px;
+  .card__header {
+    position: relative;
+    .card__headerBgImage {
+      width: 375px;
+      height: 270px;
+    }
+
+    .card__headerButtons {
+      position: absolute;
+      top: 15.44px;
+      left: 15.44px;
+      display: flex;
+      width: 63.56px;
+      height: 31.11px;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover img {
+        animation: backButton 0.5s infinite alternate forwards linear;
+      }
+
+      .card__headerButtonArrowImage {
+        width: 31.11px;
+        height: 31.11px;
+      }
+
+      .card__headerButtonBack {
+        font-weight: 300;
+        font-size: 18px;
+        color: $white;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .card__body {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    width: 375px;
+    background-color: $white;
+    position: absolute;
+    bottom: 53px;
+    left: 0;
+    right: 0;
+
+    .card__container {
+      width: 325px;
+      margin: 0 auto;
+
+      .card__bodyHeader {
+        padding: 20px 0;
+
+        .card__bodyHeaderTop {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .card__bodyHeaderName {
+            font-size: 44px;
+            color: $purple;
+            font-weight: 900;
+          }
+
+          .card__bodyHeadeMoreIcn {
+            cursor: pointer;
+            padding: 15px 0;
+            transition: 0.3s all ease;
+
+            &:hover {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        .card__bodyHeaderFollowButttons {
+          display: flex;
+          align-items: center;
+          width: 100px;
+          transition: 0.3s all ease;
+
+          &:hover {
+            background-color: whitesmoke;
+          }
+
+          .card__bodyHeaderFollowIcon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: 0.3s all ease;
+          }
+
+          .card__bodyHeaderFollow {
+            font-size: 14px;
+            font-weight: 900;
+            color: $purple;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .card__bodyStats {
+        border-top: 1px solid $purple;
+        border-bottom: 1px solid $purple;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $purple;
+        padding: 11px 0;
+        margin-bottom: 20px;
+
+        .card__bodyStatsNumber {
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 1;
+        }
+
+        .card__bodyStatsTitle {
+          font-size: 14px;
+          font-weight: 900;
+        }
+
+        .column {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .card__bodyCategories {
+        height: 247px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+          color: $purple !important;
+          font-size: 14px;
+          font-weight: 900;
+          padding-bottom: 5px;
+        }
+
+        .card__bodyCategoriesList {
+          height: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          li {
+            border-bottom: 1px solid $purple;
+            color: $purple;
+            padding: 20px 0;
+            font-size: 25px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: whitesmoke;
+            }
+
+            span {
+              transition: all 0.3s ease;
+            }
+
+            &:hover span {
+              transform: translateX(20px);
+            }
+
+            img {
+              transition: all 0.3s ease;
+            }
+
+            &:hover img {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes backButton {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}

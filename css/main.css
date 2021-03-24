@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e7e7e7;
+}
+
+.section a {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  position: relative;
+  height: 720px;
+}
+
+.card .card__header {
+  position: relative;
+}
+
+.card .card__header .card__headerBgImage {
+  width: 375px;
+  height: 270px;
+}
+
+.card .card__header .card__headerButtons {
+  position: absolute;
+  top: 15.44px;
+  left: 15.44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 63.56px;
+  height: 31.11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card .card__header .card__headerButtons:hover img {
+  -webkit-animation: backButton 0.5s infinite alternate forwards linear;
+          animation: backButton 0.5s infinite alternate forwards linear;
+}
+
+.card .card__header .card__headerButtons .card__headerButtonArrowImage {
+  width: 31.11px;
+  height: 31.11px;
+}
+
+.card .card__header .card__headerButtons .card__headerButtonBack {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.card .card__body {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  height: 450px;
+  width: 375px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 53px;
+  left: 0;
+  right: 0;
+}
+
+.card .card__body .card__container {
+  width: 325px;
+  margin: 0 auto;
+}
+
+.card .card__body .card__container .card__bodyHeader {
+  padding: 20px 0;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderTop .card__bodyHeaderName {
+  font-size: 44px;
+  color: #462681;
+  font-weight: 900;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderTop .card__bodyHeadeMoreIcn {
+  cursor: pointer;
+  padding: 15px 0;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderTop .card__bodyHeadeMoreIcn:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderFollowButttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderFollowButttons:hover {
+  background-color: whitesmoke;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderFollowButttons .card__bodyHeaderFollowIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.card .card__body .card__container .card__bodyHeader .card__bodyHeaderFollowButttons .card__bodyHeaderFollow {
+  font-size: 14px;
+  font-weight: 900;
+  color: #462681;
+  cursor: pointer;
+}
+
+.card .card__body .card__container .card__bodyStats {
+  border-top: 1px solid #462681;
+  border-bottom: 1px solid #462681;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #462681;
+  padding: 11px 0;
+  margin-bottom: 20px;
+}
+
+.card .card__body .card__container .card__bodyStats .card__bodyStatsNumber {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.card .card__body .card__container .card__bodyStats .card__bodyStatsTitle {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.card .card__body .card__container .card__bodyStats .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card__body .card__container .card__bodyCategories {
+  height: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card__body .card__container .card__bodyCategories h4 {
+  color: #462681 !important;
+  font-size: 14px;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList {
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li {
+  border-bottom: 1px solid #462681;
+  color: #462681;
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li:hover {
+  background-color: whitesmoke;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li span {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li:hover span {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .card__body .card__container .card__bodyCategories .card__bodyCategoriesList li:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes backButton {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes backButton {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
